@@ -16,11 +16,15 @@
   h1 { font-size: 56px; letter-spacing: 10px; text-align: center; color: var(--gold);
        text-shadow: 0 0 24px rgba(212,175,55,.35); margin-bottom: 6px; }
   .sub { text-align: center; color: #b8a978; font-size: 16px; letter-spacing: 4px; margin-bottom: 10px; }
-  .ver { text-align: center; color: #7a7a88; font-size: 14px; margin-bottom: 40px; }
+  .ver { text-align: center; color: #7a7a88; font-size: 14px; margin-bottom: 34px; }
   .ver b { color: var(--gold); }
   .card { background: rgba(255,255,255,.03); border: 1px solid rgba(212,175,55,.25);
           border-radius: 14px; padding: 28px 32px; margin-bottom: 26px; }
   .card h2 { color: var(--gold); font-size: 22px; margin-bottom: 16px; letter-spacing: 2px; }
+  .tag { display: inline-block; font-size: 12px; padding: 2px 10px; border-radius: 20px;
+         margin-left: 10px; vertical-align: middle; letter-spacing: 0; }
+  .tag-new { background: rgba(212,175,55,.15); color: var(--gold); border: 1px solid var(--gold-dim); }
+  .tag-demo { background: rgba(120,170,255,.12); color: #8ab8ff; border: 1px solid #3a5a8a; }
   .download-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   @media (max-width: 640px) { .download-grid { grid-template-columns: 1fr; } }
   .btn { display: block; text-align: center; text-decoration: none; border-radius: 10px;
@@ -29,6 +33,8 @@
   .btn-main:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(212,175,55,.35); }
   .btn-ghost { background: rgba(255,255,255,.05); color: #cfc9b8; border: 1px solid rgba(255,255,255,.15); }
   .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+  .btn-demo { background: linear-gradient(180deg, #6b8fd4, #4a6aa8); color: #0d0d11; font-weight: bold; }
+  .btn-demo:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(107,143,212,.35); }
   .btn small { display: block; font-size: 12px; opacity: .8; margin-top: 4px; }
   .mirror-tip { text-align: center; color: #8a8578; font-size: 13px; margin-top: 14px; }
   .list { list-style: none; }
@@ -44,26 +50,32 @@
 <div class="wrap">
   <h1>嬴惑守心</h1>
   <div class="sub">蛊真人同人 · 北原天宝城 · 古镇生存</div>
-  <div class="ver">当前版本 <b>v1.0.0 正式版</b>（支持 Windows / Android）</div>
+  <div class="ver">正式版 <b>v1.0.1</b> · DEMO 体验服 <b>v1.0</b>（支持 Windows / Android）</div>
 
   <div class="card">
-    <h2>立即下载</h2>
+    <h2>正式版下载<span class="tag tag-new">完整版 · 含修炼体系</span></h2>
     <div class="download-grid">
-      <a class="btn btn-main" href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.0/yinghuo_windows.zip">下载 Windows 版 v1.0.0<small>143 MB · 解压后运行 yinghuo_shouxin.exe</small></a>
-      <a class="btn btn-main" href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.0/yinghuo_android.apk">下载 Android 版 v1.0.0<small>140 MB · 直接安装 APK（Android 7.0+）</small></a>
+      <a class="btn btn-main" href="http://139.155.144.133/yinghuo/download/yinghuo_windows.zip">下载 Windows 版 v1.0.1<small>151 MB · 解压后运行 yinghuo_shouxin.exe</small></a>
+      <a class="btn btn-main" href="http://139.155.144.133/yinghuo/download/yinghuo_android.apk">下载 Android 版 v1.0.1<small>147 MB · 直接安装 APK（Android 7.0+）</small></a>
     </div>
-    <div class="mirror-tip">若上方国内镜像下载缓慢，可点下面备用镜像，或访问 <a href="https://github.com/ckx04240424-sys/Microverse/releases" style="color:#8a85a0">GitHub 发布页</a></div>
-    <div class="download-grid" style="margin-top:14px">
-      <a class="btn btn-ghost" href="https://ghfast.top/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.0/yinghuo_windows.zip">备用镜像 · Windows</a>
-      <a class="btn btn-ghost" href="https://ghfast.top/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.0/yinghuo_android.apk">备用镜像 · Android</a>
+    <div class="mirror-tip">若直连缓慢，可用备用镜像：<a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.1/yinghuo_windows.zip" style="color:#8a85a0">Windows</a> · <a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.1/yinghuo_android.apk" style="color:#8a85a0">Android</a></div>
+  </div>
+
+  <div class="card">
+    <h2>DEMO 体验服<span class="tag tag-demo">免费测试版 · 无修炼体系</span></h2>
+    <p style="color:#9a9aa8; font-size:14px; margin-bottom:14px">免费体验天宝城 · 蛊市 · AI 角色对话。喜欢再入正式版，进度不影响正式版。</p>
+    <div class="download-grid">
+      <a class="btn btn-demo" href="http://139.155.144.133/yinghuo/download/demo_windows.zip">下载 DEMO Windows 版<small>81 MB · 解压后运行 exe</small></a>
+      <a class="btn btn-demo" href="http://139.155.144.133/yinghuo/download/demo.apk">下载 DEMO Android 版<small>83 MB · 直接安装 APK</small></a>
     </div>
+    <div class="mirror-tip">备用镜像：<a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/demo-v1.0/demo_windows.zip" style="color:#8a85a0">Windows</a> · <a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/demo-v1.0/demo.apk" style="color:#8a85a0">Android</a></div>
   </div>
 
   <div class="card">
     <h2>游戏特色</h2>
     <ul class="list">
-      <li>手机号一键登录 + 短信验证码，账号跨端同步</li>
-      <li>必须加入服务器：第 1 个服务器免费，生成 6 位服务器 ID 呼朋唤友</li>
+      <li>手机号一键登录 + 短信验证码（演示模式弹窗展示），账号跨端</li>
+      <li>必须加入服务器：第 1 个服务器免费，生成 6 位服务器 ID 呼朋唤友，上限 8 人</li>
       <li>元石本位经济 · 蛊市交易（蛊虫/金砂/铁矿/蛊麦/药材 五大行情）</li>
       <li>金道修炼体系 · 炼蛊成器 · 攻击蛊化技能释放（月刃/飞剑/铁羽箭）</li>
       <li>北原官道 · 天宝城 9 位固定家老 AI 角色 · 完整世界观剧情</li>
