@@ -3,101 +3,195 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>嬴惑守心 - 蛊真人同人·古镇生存游戏</title>
-<style>
-  :root { --gold: #d4af37; --gold-dim: #a0802a; --ink: #1a1a1f; --bg: #0d0d11; }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
-    background: radial-gradient(1200px 600px at 50% -100px, #232028, var(--bg)) var(--bg);
-    color: #e8e4da; line-height: 1.7; min-height: 100vh;
-  }
-  .wrap { max-width: 900px; margin: 0 auto; padding: 48px 24px 64px; }
-  h1 { font-size: 56px; letter-spacing: 10px; text-align: center; color: var(--gold);
-       text-shadow: 0 0 24px rgba(212,175,55,.35); margin-bottom: 6px; }
-  .sub { text-align: center; color: #b8a978; font-size: 16px; letter-spacing: 4px; margin-bottom: 10px; }
-  .ver { text-align: center; color: #7a7a88; font-size: 14px; margin-bottom: 34px; }
-  .ver b { color: var(--gold); }
-  .card { background: rgba(255,255,255,.03); border: 1px solid rgba(212,175,55,.25);
-          border-radius: 14px; padding: 28px 32px; margin-bottom: 26px; }
-  .card h2 { color: var(--gold); font-size: 22px; margin-bottom: 16px; letter-spacing: 2px; }
-  .tag { display: inline-block; font-size: 12px; padding: 2px 10px; border-radius: 20px;
-         margin-left: 10px; vertical-align: middle; letter-spacing: 0; }
-  .tag-new { background: rgba(212,175,55,.15); color: var(--gold); border: 1px solid var(--gold-dim); }
-  .tag-demo { background: rgba(120,170,255,.12); color: #8ab8ff; border: 1px solid #3a5a8a; }
-  .download-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  @media (max-width: 640px) { .download-grid { grid-template-columns: 1fr; } }
-  .btn { display: block; text-align: center; text-decoration: none; border-radius: 10px;
-         padding: 18px 12px; font-size: 18px; letter-spacing: 1px; transition: all .15s; }
-  .btn-main { background: linear-gradient(180deg, #d4af37, #a0802a); color: #1a1a1f; font-weight: bold; }
-  .btn-main:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(212,175,55,.35); }
-  .btn-ghost { background: rgba(255,255,255,.05); color: #cfc9b8; border: 1px solid rgba(255,255,255,.15); }
-  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
-  .btn-demo { background: linear-gradient(180deg, #6b8fd4, #4a6aa8); color: #0d0d11; font-weight: bold; }
-  .btn-demo:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(107,143,212,.35); }
-  .btn small { display: block; font-size: 12px; opacity: .8; margin-top: 4px; }
-  .mirror-tip { text-align: center; color: #8a8578; font-size: 13px; margin-top: 14px; }
-  .list { list-style: none; }
-  .list li { padding: 6px 0 6px 26px; position: relative; color: #d6d2c6; }
-  .list li::before { content: "◆"; position: absolute; left: 0; color: var(--gold-dim); font-size: 12px; top: 12px; }
-  .links { text-align: center; color: #6a6a78; font-size: 13px; margin-top: 34px; }
-  .links a { color: #8a85a0; text-decoration: none; }
-  .links a:hover { color: var(--gold); }
-  .note { color: #6a6a78; font-size: 12px; margin-top: 8px; }
-</style>
+<title>《嬴惑守心》Mars Stationed at Antares — 北原 · 白秋原 · 天宝城</title>
+<meta name="description" content="《嬴惑守心》（Mars Stationed at Antares）— 根据小说《蛊气凌霄》改编的嬴家金道蛊师家族模拟游戏。修炼、蛊市、家族，天宝城等你来。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <h1>嬴惑守心</h1>
-  <div class="sub">蛊真人同人 · 北原天宝城 · 古镇生存</div>
-  <div class="ver">正式版 <b>v1.0.1</b> · DEMO 体验服 <b>v1.0</b>（支持 Windows / Android）</div>
 
-  <div class="card">
-    <h2>正式版下载<span class="tag tag-new">完整版 · 含修炼体系</span></h2>
-    <div class="download-grid">
-      <a class="btn btn-main" href="http://139.155.144.133/yinghuo/download/yinghuo_windows.zip">下载 Windows 版 v1.0.1<small>151 MB · 解压后运行 yinghuo_shouxin.exe</small></a>
-      <a class="btn btn-main" href="http://139.155.144.133/yinghuo/download/yinghuo_android.apk">下载 Android 版 v1.0.1<small>147 MB · 直接安装 APK（Android 7.0+）</small></a>
+<!-- 顶部导航 -->
+<header class="site-nav" id="top">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-seal">嬴</span>
+      <span class="brand-name">嬴惑守心</span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#story">世界观</a>
+      <a href="#features">玩法</a>
+      <a href="#gallery">实况</a>
+      <a href="#download">下载</a>
+      <a href="#changelog">日志</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-veil" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-prefix reveal">北原 · 白秋原 · 天宝城</p>
+    <h1 class="hero-title-vertical reveal" aria-label="嬴惑守心">
+      <span>嬴</span><span>惑</span><span>守</span><span>心</span>
+    </h1>
+    <div class="hero-sub reveal">
+      <p class="hero-tagline">嬴家金道蛊师家族 · 家族模拟</p>
+      <p class="hero-desc">族训有云：<em>「有名者有命，无字者无根」</em><br>
+      你生而为嬴家子弟，选一堂口立志，打坐、突破、交易、掌家——在天宝城中谋一席之地。</p>
+      <div class="hero-actions">
+        <a class="btn btn-gold" href="#download">下载 DEMO</a>
+        <a class="btn btn-ghost" href="#story">初识天宝城</a>
+      </div>
     </div>
-    <div class="mirror-tip">若直连缓慢，可用备用镜像：<a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.1/yinghuo_windows.zip" style="color:#8a85a0">Windows</a> · <a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.1/yinghuo_android.apk" style="color:#8a85a0">Android</a></div>
+  </div>
+  <p class="hero-scrollhint" aria-hidden="true">卷 轴 徐 展</p>
+</section>
+
+<!-- 世界观 -->
+<section class="section story" id="story">
+  <div class="section-head reveal">
+    <span class="kicker pixel">WORLD</span>
+    <h2>天宝城 · 嬴家</h2>
+    <p class="section-lead">一座黑铁之城，一个金道家族，三房五支，八堂十制。</p>
   </div>
 
-  <div class="card">
-    <h2>DEMO 体验服<span class="tag tag-demo">免费测试版 · 无修炼体系</span></h2>
-    <p style="color:#9a9aa8; font-size:14px; margin-bottom:14px">免费体验天宝城 · 蛊市 · AI 角色对话。喜欢再入正式版，进度不影响正式版。</p>
-    <div class="download-grid">
-      <a class="btn btn-demo" href="http://139.155.144.133/yinghuo/download/demo_windows.zip">下载 DEMO Windows 版<small>81 MB · 解压后运行 exe</small></a>
-      <a class="btn btn-demo" href="http://139.155.144.133/yinghuo/download/demo.apk">下载 DEMO Android 版<small>83 MB · 直接安装 APK</small></a>
+  <div class="story-layout">
+    <div class="scroll-card reveal">
+      <p class="scroll-vertical">有名者有命<br>无字者无根</p>
     </div>
-    <div class="mirror-tip">备用镜像：<a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/demo-v1.0/demo_windows.zip" style="color:#8a85a0">Windows</a> · <a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/demo-v1.0/demo.apk" style="color:#8a85a0">Android</a></div>
+    <div class="story-body reveal">
+      <p>北原白秋原之上，天宝城依黑铁山而立。嬴家以金道立族，族中子弟按<strong>房支用字</strong>命名——第二字即是出身与职司：长房嫡宗渊烈锐锋，掌权柄；二房铁脉战武器仲，执戈武；三房衡脉富礼谷草，司生息。</p>
+      <p>八位家老各领一堂：兵、刑、工、学四堂掌兵刑工学，商、客、农、医四堂掌钱粮人情。族人与凡人混居于市井坊间，蛊虫、金砂、铁矿石、蛊麦、药材于坊市流转——价格起伏，盈亏自负。</p>
+      <p>你生于斯、长于斯。十五岁择定志向那一日，便是你与这座城命运相交的起点。</p>
+      <ul class="clan-roster" aria-label="家老名录">
+        <li><span class="portrait" style="background-image:url(assets/hero-ying-yuan.png)"></span><span class="r-name">嬴渊</span><span class="r-post">族长 · 内议堂</span></li>
+        <li><span class="portrait" style="background-image:url(assets/hero-ying-zhan.png)"></span><span class="r-name">嬴战</span><span class="r-post">兵堂家老</span></li>
+        <li><span class="portrait" style="background-image:url(assets/hero-ying-zhong.png)"></span><span class="r-name">嬴仲</span><span class="r-post">学堂家老</span></li>
+        <li><span class="portrait" style="background-image:url(assets/hero-ying-fu.png)"></span><span class="r-name">嬴富</span><span class="r-post">商堂家老</span></li>
+        <li><span class="portrait" style="background-image:url(assets/hero-ying-li.png)"></span><span class="r-name">嬴礼</span><span class="r-post">客堂家老</span></li>
+        <li><span class="portrait" style="background-image:url(assets/hero-ying-cao.png)"></span><span class="r-name">嬴草</span><span class="r-post">医堂家老</span></li>
+      </ul>
+      <p class="story-note pixel">嬴武·刑堂 / 嬴器·工堂 / 嬴谷·农堂 亦列八老之数</p>
+    </div>
   </div>
+</section>
 
-  <div class="card">
-    <h2>游戏特色</h2>
-    <ul class="list">
-      <li>手机号一键登录 + 短信验证码（演示模式弹窗展示），账号跨端</li>
-      <li>必须加入服务器：第 1 个服务器免费，生成 6 位服务器 ID 呼朋唤友，上限 8 人</li>
-      <li>元石本位经济 · 蛊市交易（蛊虫/金砂/铁矿/蛊麦/药材 五大行情）</li>
-      <li>金道修炼体系 · 炼蛊成器 · 攻击蛊化技能释放（月刃/飞剑/铁羽箭）</li>
-      <li>北原官道 · 天宝城 9 位固定家老 AI 角色 · 完整世界观剧情</li>
-    </ul>
+<!-- 玩法 -->
+<section class="section features" id="features">
+  <div class="section-head reveal">
+    <span class="kicker pixel">FEATURES</span>
+    <h2>三 大 玩 法</h2>
   </div>
+  <div class="feature-grid">
+    <article class="feature-card reveal">
+      <span class="f-index pixel">壹</span>
+      <h3>修炼体系</h3>
+      <p>资质定元海成数，十绝甲等一诀千里。打坐纳金气、突破冲关隘，切磋印证道行——修为高低，决定你在族中的话语权。</p>
+    </article>
+    <article class="feature-card reveal">
+      <span class="f-index pixel">贰</span>
+      <h3>蛊市交易</h3>
+      <p>蛊虫、金砂、铁矿石、蛊麦、药材五品同市。开高低收、成交量额，均值回归与事件冲击共舞——低买高卖，商堂嬴富可精于此道。</p>
+    </article>
+    <article class="feature-card reveal">
+      <span class="f-index pixel">叁</span>
+      <h3>家族模拟</h3>
+      <p>八堂口各司其职，九位家老有血有肉。人情、恩怨、派系、联机共游——你是家族子弟，而非局外上帝。</p>
+    </article>
+  </div>
+</section>
 
-  <div class="card">
-    <h2>玩法简介</h2>
-    <ul class="list">
-      <li>出生自选八堂口志向，家族子弟从零成长</li>
-      <li>地图 22 张全国通行，传送链互连，逐图经营</li>
-      <li>种田 · 采矿 · 炼药 · 炼蛊 · 经商 · 修行 · 接任务</li>
-      <li>点击技能图标或按数字键 1~5 释放蛊虫技能</li>
-    </ul>
+<!-- 截图 -->
+<section class="section gallery" id="gallery">
+  <div class="section-head reveal">
+    <span class="kicker pixel">SCREENSHOTS</span>
+    <h2>实 机 画 面</h2>
   </div>
+  <div class="gallery-frame reveal" id="galleryFrame">
+    <figure class="g-slide is-active">
+      <img src="assets/map-preview.png" alt="天宝城全景地图">
+      <figcaption>天宝城全图 · 十字主街分四象限</figcaption>
+    </figure>
+    <figure class="g-slide">
+      <img src="assets/shot-layout.png" alt="房间布局示意">
+      <figcaption>八堂口房间布局</figcaption>
+    </figure>
+    <figure class="g-slide">
+      <img src="assets/shot-tiles.png" alt="瓦片素材预览">
+      <figcaption>瓦片与家具图集</figcaption>
+    </figure>
+    <div class="g-controls">
+      <button class="g-arrow" id="gPrev" aria-label="上一张">‹</button>
+      <div class="g-dots" id="gDots"></div>
+      <button class="g-arrow" id="gNext" aria-label="下一张">›</button>
+    </div>
+  </div>
+</section>
 
-  <div class="links">
-    <a href="https://github.com/ckx04240424-sys/Microverse">源代码仓库</a> ·
-    <a href="https://github.com/ckx04240424-sys/Microverse/releases">GitHub Releases</a> ·
-    <a href="mailto:ckx04240424@163.com">联系我们</a>
+<!-- 下载 -->
+<section class="section download" id="download">
+  <div class="section-head reveal">
+    <span class="kicker pixel">DOWNLOAD</span>
+    <h2>下 载</h2>
   </div>
-  <div class="note" style="text-align:center">© 2026 嬴惑守心 · 本作为《蛊真人》同人作品，仅供学习交流</div>
-</div>
+  <div class="dl-grid">
+    <div class="dl-card dl-full reveal" id="fullVersion">
+      <span class="dl-badge pixel">v1.0.1</span>
+      <h3>正式版</h3>
+      <p>金道修炼 · 蛊市交易 · 家族模拟<br>资质、突破、切磋全收录</p>
+      <div class="dl-row">
+        <a class="dl-btn" href="http://139.155.144.133/yinghuo/download/yinghuo_windows.zip">Windows 版</a>
+        <a class="dl-btn ghost" href="http://139.155.144.133/yinghuo/download/yinghuo_android.apk">Android 版</a>
+      </div>
+      <div class="dl-mirror">直连缓慢可用镜像：<a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.1/yinghuo_windows.zip">Windows</a> · <a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/v1.0.1/yinghuo_android.apk">Android</a></div>
+    </div>
+    <div class="dl-card dl-demo reveal">
+      <span class="dl-badge pixel">免费</span>
+      <h3>DEMO 体验服</h3>
+      <p>出生引导 · 八堂口 · 天宝城漫游<br>免费测试版 · 双端</p>
+      <div class="dl-row">
+        <a class="dl-btn" href="http://139.155.144.133/yinghuo/download/demo_windows.zip">Windows 版</a>
+        <a class="dl-btn ghost" href="http://139.155.144.133/yinghuo/download/demo.apk">Android 版</a>
+      </div>
+      <div class="dl-mirror">直连缓慢可用镜像：<a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/demo-v1.0/demo_windows.zip">Windows</a> · <a href="https://gh-proxy.com/https://github.com/ckx04240424-sys/Microverse/releases/download/demo-v1.0/demo.apk">Android</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 更新日志 -->
+<section class="section changelog" id="changelog">
+  <div class="section-head reveal">
+    <span class="kicker pixel">CHANGELOG</span>
+    <h2>更 新 日 志</h2>
+  </div>
+  <ol class="timeline">
+    <li class="tl-item reveal">
+      <span class="tl-date pixel">2026.08</span>
+      <h3>v1.0.1 — 正式版发布</h3>
+      <p>金道修炼体系 · 蛊市交易 · 家族模拟 · 联机共游。正式版 Windows / Android 双端开放下载。</p>
+    </li>
+    <li class="tl-item reveal">
+      <span class="tl-date pixel">2026.08</span>
+      <h3>v1.0 — DEMO 体验服双端</h3>
+      <p>出生引导、八堂口志向、天宝城漫游、固定家老互动。DEMO 体验服 Windows / Android 双端上线，免费游玩。</p>
+    </li>
+  </ol>
+</section>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <p class="pixel">嬴惑守心 · Mars Stationed at Antares · 嬴家档案</p>
+  <p class="credit">本游戏为同人改编作品 · 根据小说《蛊气凌霄》改编 · 世界观为架空演绎</p>
+  <p>© 2026 时空码头 KsanaDock · <a href="https://www.ksanadock.com" target="_blank" rel="noopener">ksanadock.com</a></p>
+  <button class="back-top" id="backTop" aria-label="回到顶部">▲</button>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">正式版敬请期待</div>
+
+<script src="main.js"></script>
 </body>
 </html>
